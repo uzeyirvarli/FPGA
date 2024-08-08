@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/HAlf_Adder_Sim_isim_beh.exe" -prj "/media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/HAlf_Adder_Sim_beh.prj" "work.HAlf_Adder_Sim" 

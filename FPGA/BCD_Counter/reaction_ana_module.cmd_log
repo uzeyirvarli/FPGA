@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/Lab4/BCD_Counter/reaction_ana_module.xst" -ofn "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/Lab4/BCD_Counter/reaction_ana_module.syr" 
+xst -intstyle ise -ifn "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/New folder/BCD_Counter/reaction_ana_module.xst" -ofn "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/New folder/BCD_Counter/reaction_ana_module.syr" 

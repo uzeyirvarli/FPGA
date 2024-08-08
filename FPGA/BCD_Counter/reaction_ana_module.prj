@@ -1,0 +1,5 @@
+vhdl work "../../../Burcu Hoca Kodlar/Reaction number/seven_segment_converter.vhd"
+vhdl work "../../../Burcu Hoca Kodlar/Reaction number/Reaction_Timer.vhd"
+vhdl work "../../../Burcu Hoca Kodlar/Reaction number/Enable_generator.vhd"
+vhdl work "../../../Burcu Hoca Kodlar/Reaction number/clk_divider.vhd"
+vhdl work "../../../Burcu Hoca Kodlar/Reaction number/reaction_ana_module.vhd"

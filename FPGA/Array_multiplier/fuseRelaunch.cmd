@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/uzeyir/uygulamalar/FPGA_Lesson_projects/Donem_sonu_projesi/Array_multiplier/array_multiplier_tb_isim_beh.exe" -prj "F:/uzeyir/uygulamalar/FPGA_Lesson_projects/Donem_sonu_projesi/Array_multiplier/array_multiplier_tb_beh.prj" "work.array_multiplier_tb" 

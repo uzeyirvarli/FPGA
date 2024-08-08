@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/Lab1/full_adder/full_adder_imp.xst" -ofn "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/Lab1/full_adder/full_adder_imp.syr" 

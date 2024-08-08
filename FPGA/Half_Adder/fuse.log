@@ -1,0 +1,22 @@
+Running: /home/uzeyir/Desktop/ise_14_7/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/HAlf_Adder_Sim_isim_beh.exe -prj /media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/HAlf_Adder_Sim_beh.prj work.HAlf_Adder_Sim 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/half_adder_imp.vhd" into library work
+Parsing VHDL file "/media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/HAlf_Adder_Sim.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95864 KB
+Fuse CPU Usage: 1520 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity half_adder_imp [half_adder_imp_default]
+Compiling architecture behavior of entity half_adder_sim
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /media/uzeyir/uzeyir_varli/uzeyir/projelerim/FPGA_Lesson_projects/Lab1/Half_Adder/HAlf_Adder_Sim_isim_beh.exe
+Fuse Memory Usage: 661568 KB
+Fuse CPU Usage: 1550 ms
+GCC CPU Usage: 240 ms

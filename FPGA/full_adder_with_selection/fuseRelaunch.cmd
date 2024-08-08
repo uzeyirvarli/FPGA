@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/Lab1/full_adder/Full_Adder_sim_isim_beh.exe" -prj "F:/uzeyir/projelerim/FPGA_Lesson_projects/LAB PROJECTS/Lab1/full_adder/Full_Adder_sim_beh.prj" "work.Full_Adder_sim" 

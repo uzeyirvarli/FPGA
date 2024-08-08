@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/uzeyir/projelerim/FPGA_Lesson_projects/FSM_Moore_Code1/FSM_Moore_Code1_imp.xst" -ofn "F:/uzeyir/projelerim/FPGA_Lesson_projects/FSM_Moore_Code1/FSM_Moore_Code1_imp.syr" 
+xst -intstyle ise -ifn "F:/uzeyir/projelerim/FPGA_Lesson_projects/FSM_Moore_Code1/FSM_Moore_Code1_imp.xst" -ofn "F:/uzeyir/projelerim/FPGA_Lesson_projects/FSM_Moore_Code1/FSM_Moore_Code1_imp.syr" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/uzeyir/projelerim/FPGA_Lesson_projects/FSM_Moore_Code1/FSM_Moore_Code1_imp_isim_beh.exe" -prj "F:/uzeyir/projelerim/FPGA_Lesson_projects/FSM_Moore_Code1/FSM_Moore_Code1_imp_beh.prj" "work.FSM_Moore_Code1_imp" 

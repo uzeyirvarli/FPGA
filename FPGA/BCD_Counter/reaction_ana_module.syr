@@ -1,0 +1,585 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: reaction_ana_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "reaction_ana_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "reaction_ana_module"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : reaction_ana_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\seven_segment_converter.vhd" into library work
+Parsing entity <seven_segment_converter>.
+Parsing architecture <Behavioral> of entity <seven_segment_converter>.
+Parsing VHDL file "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\Reaction_Timer.vhd" into library work
+Parsing entity <BCD_counter>.
+Parsing architecture <Behavioral> of entity <bcd_counter>.
+Parsing VHDL file "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\Enable_generator.vhd" into library work
+Parsing entity <Enable_generator>.
+Parsing architecture <Behavioral> of entity <enable_generator>.
+Parsing VHDL file "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\clk_divider.vhd" into library work
+Parsing entity <clk100MHz>.
+Parsing architecture <Behavioral> of entity <clk100mhz>.
+Parsing VHDL file "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\reaction_ana_module.vhd" into library work
+Parsing entity <reaction_ana_module>.
+Parsing architecture <Behavioral> of entity <reaction_ana_module>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <reaction_ana_module> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD_counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <seven_segment_converter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <clk100MHz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Enable_generator> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\Enable_generator.vhd" Line 44: pushn should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\Enable_generator.vhd" Line 46: w should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <reaction_ana_module>.
+    Related source file is "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\reaction_ana_module.vhd".
+    Summary:
+	no macro.
+Unit <reaction_ana_module> synthesized.
+
+Synthesizing Unit <BCD_counter>.
+    Related source file is "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\Reaction_Timer.vhd".
+    Found 4-bit register for signal <BCD0_tmp>.
+    Found 4-bit register for signal <BCD1_tmp>.
+    Found 4-bit adder for signal <BCD1_tmp[3]_GND_6_o_add_2_OUT> created at line 59.
+    Found 4-bit adder for signal <BCD0_tmp[3]_GND_6_o_add_4_OUT> created at line 62.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+Unit <BCD_counter> synthesized.
+
+Synthesizing Unit <seven_segment_converter>.
+    Related source file is "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\seven_segment_converter.vhd".
+    Found 16x7-bit Read Only RAM for signal <Seven_Segment>
+    Summary:
+	inferred   1 RAM(s).
+Unit <seven_segment_converter> synthesized.
+
+Synthesizing Unit <clk100MHz>.
+    Related source file is "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\clk_divider.vhd".
+    Found 7-bit register for signal <counter>.
+    Found 1-bit register for signal <temporal>.
+    Found 7-bit adder for signal <counter[6]_GND_8_o_add_1_OUT> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <clk100MHz> synthesized.
+
+Synthesizing Unit <Enable_generator>.
+    Related source file is "F:\uzeyir\projelerim\FPGA_Lesson_projects\Burcu Hoca Kodlar\Reaction number\Enable_generator.vhd".
+WARNING:Xst:647 - Input <clk_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <LED>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+Unit <Enable_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 2
+ 7-bit adder                                           : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 4-bit register                                        : 2
+ 7-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD_counter>.
+The following registers are absorbed into counter <BCD0_tmp>: 1 register on signal <BCD0_tmp>.
+The following registers are absorbed into counter <BCD1_tmp>: 1 register on signal <BCD1_tmp>.
+Unit <BCD_counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clk100MHz>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clk100MHz> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_segment_converter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Seven_Segment> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <BCDin>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Seven_Segment> |          |
+    -----------------------------------------------------------------------
+Unit <seven_segment_converter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 2
+# Counters                                             : 3
+ 4-bit up counter                                      : 2
+ 7-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    En_gen/LED in unit <reaction_ana_module>
+
+
+Optimizing unit <reaction_ana_module> ...
+
+Optimizing unit <BCD_counter> ...
+WARNING:Xst:1293 - FF/Latch <clk_divider/counter_4> has a constant value of 0 in block <reaction_ana_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_divider/counter_5> has a constant value of 0 in block <reaction_ana_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <clk_divider/counter_6> has a constant value of 0 in block <reaction_ana_module>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block reaction_ana_module, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : reaction_ana_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 48
+#      INV                         : 4
+#      LUT2                        : 6
+#      LUT3                        : 3
+#      LUT4                        : 19
+#      LUT5                        : 5
+#      LUT6                        : 9
+#      MUXF7                       : 2
+# FlipFlops/Latches                : 14
+#      FD                          : 4
+#      FDC                         : 4
+#      FDCE                        : 1
+#      FDRE                        : 4
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 3
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              14  out of  126800     0%  
+ Number of Slice LUTs:                   46  out of  63400     0%  
+    Number used as Logic:                46  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     46
+   Number with an unused Flip Flop:      32  out of     46    69%  
+   Number with an unused LUT:             0  out of     46     0%  
+   Number of fully used LUT-FF pairs:    14  out of     46    30%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    210     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+clk_main                           | BUFGP                   | 5     |
+clk_divider/temporal               | NONE(counter/BCD0_tmp_3)| 8     |
+En_gen/LED_G(En_gen/LED_G:O)       | NONE(*)(En_gen/LED)     | 1     |
+-----------------------------------+-------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.497ns (Maximum Frequency: 400.481MHz)
+   Minimum input arrival time before clock: 2.229ns
+   Maximum output required time after clock: 1.889ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_main'
+  Clock period: 1.930ns (frequency: 518.135MHz)
+  Total number of paths / destination ports: 17 / 6
+-------------------------------------------------------------------------
+Delay:               1.930ns (Levels of Logic = 1)
+  Source:            clk_divider/counter_3 (FF)
+  Destination:       clk_divider/temporal (FF)
+  Source Clock:      clk_main rising
+  Destination Clock: clk_main rising
+
+  Data Path: clk_divider/counter_3 to clk_divider/temporal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.478   0.790  clk_divider/counter_3 (clk_divider/counter_3)
+     LUT4:I0->O            1   0.124   0.399  clk_divider/GND_8_o_counter[6]_equal_1_o<6>1 (clk_divider/GND_8_o_counter[6]_equal_1_o)
+     FDCE:CE                   0.139          clk_divider/temporal
+    ----------------------------------------
+    Total                      1.930ns (0.741ns logic, 1.189ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_divider/temporal'
+  Clock period: 2.497ns (frequency: 400.481MHz)
+  Total number of paths / destination ports: 102 / 12
+-------------------------------------------------------------------------
+Delay:               2.497ns (Levels of Logic = 2)
+  Source:            counter/BCD1_tmp_0 (FF)
+  Destination:       counter/BCD1_tmp_3 (FF)
+  Source Clock:      clk_divider/temporal rising
+  Destination Clock: clk_divider/temporal rising
+
+  Data Path: counter/BCD1_tmp_0 to counter/BCD1_tmp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.478   0.822  counter/BCD1_tmp_0 (counter/BCD1_tmp_0)
+     LUT5:I2->O            1   0.124   0.919  counter/Mcount_BCD1_tmp_val1_SW3 (N4)
+     LUT6:I1->O            1   0.124   0.000  counter/BCD1_tmp_3_rstpot (counter/BCD1_tmp_3_rstpot)
+     FD:D                      0.030          counter/BCD1_tmp_3
+    ----------------------------------------
+    Total                      2.497ns (0.756ns logic, 1.741ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_main'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              1.006ns (Levels of Logic = 1)
+  Source:            Reset (PAD)
+  Destination:       clk_divider/temporal (FF)
+  Destination Clock: clk_main rising
+
+  Data Path: Reset to clk_divider/temporal
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.001   0.511  Reset_IBUF (Reset_IBUF)
+     FDCE:CLR                  0.494          clk_divider/temporal
+    ----------------------------------------
+    Total                      1.006ns (0.495ns logic, 0.511ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_divider/temporal'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              2.229ns (Levels of Logic = 3)
+  Source:            Reset (PAD)
+  Destination:       counter/BCD1_tmp_3 (FF)
+  Destination Clock: clk_divider/temporal rising
+
+  Data Path: Reset to counter/BCD1_tmp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.001   1.031  Reset_IBUF (Reset_IBUF)
+     LUT5:I0->O            1   0.124   0.919  counter/Mcount_BCD1_tmp_val1_SW3 (N4)
+     LUT6:I1->O            1   0.124   0.000  counter/BCD1_tmp_3_rstpot (counter/BCD1_tmp_3_rstpot)
+     FD:D                      0.030          counter/BCD1_tmp_3
+    ----------------------------------------
+    Total                      2.229ns (0.279ns logic, 1.950ns route)
+                                       (12.5% logic, 87.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'En_gen/LED_G'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              0.678ns (Levels of Logic = 2)
+  Source:            Pushn (PAD)
+  Destination:       En_gen/LED (LATCH)
+  Destination Clock: En_gen/LED_G falling
+
+  Data Path: Pushn to En_gen/LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.542  Pushn_IBUF (Pushn_IBUF)
+     LUT2:I0->O            1   0.124   0.000  En_gen/LED_D (En_gen/LED_D)
+     LD:D                      0.011          En_gen/LED
+    ----------------------------------------
+    Total                      0.678ns (0.136ns logic, 0.542ns route)
+                                       (20.1% logic, 79.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_divider/temporal'
+  Total number of paths / destination ports: 56 / 14
+-------------------------------------------------------------------------
+Offset:              1.889ns (Levels of Logic = 2)
+  Source:            counter/BCD0_tmp_3 (FF)
+  Destination:       Digit0<4> (PAD)
+  Source Clock:      clk_divider/temporal rising
+
+  Data Path: counter/BCD0_tmp_3 to Digit0<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            18   0.478   0.888  counter/BCD0_tmp_3 (counter/BCD0_tmp_3)
+     LUT4:I0->O            1   0.124   0.399  seg0/Mram_Seven_Segment41 (Digit0_4_OBUF)
+     OBUF:I->O                 0.000          Digit0_4_OBUF (Digit0<4>)
+    ----------------------------------------
+    Total                      1.889ns (0.602ns logic, 1.287ns route)
+                                       (31.9% logic, 68.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'En_gen/LED_G'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.661ns (Levels of Logic = 2)
+  Source:            En_gen/LED (LATCH)
+  Destination:       LEDn (PAD)
+  Source Clock:      En_gen/LED_G falling
+
+  Data Path: En_gen/LED to LEDn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              15   0.625   0.491  En_gen/LED (En_gen/LED)
+     INV:I->O              1   0.146   0.399  LEDn1_INV_0 (LEDn_OBUF)
+     OBUF:I->O                 0.000          LEDn_OBUF (LEDn)
+    ----------------------------------------
+    Total                      1.661ns (0.771ns logic, 0.890ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_divider/temporal
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+En_gen/LED_G        |         |    2.720|         |         |
+clk_divider/temporal|    2.497|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_main
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_main       |    1.930|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.66 secs
+ 
+--> 
+
+Total memory usage is 4578860 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
